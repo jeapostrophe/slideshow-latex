@@ -2,14 +2,14 @@
 @(require scribble/manual
           scribble/basic
           scribble/extract
-          unstable/scribble
+          planet/scribble
           (for-label (file "main.rkt")
                      (file "extras.rkt")))
 
 @title[#:tag "top"]{Slideshow LaTeX}
 @author[(author+email "Jay McCarthy" "jay@racket-lang.org")]
 
-@defmodule/this-package[]
+@defmodule/this-package[main]
 
 This package provides a bunch of macros for including LaTeX figures in your slideshows, plus some other goodies.
 
