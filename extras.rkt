@@ -99,7 +99,7 @@
    (λ (title sep body)
      (let* ([pct  (if (background-image)
                       (background-image-pict)
-                      ((inset (blank 1024 768) (- margin))))]
+                      (inset (blank 1024 768) (- margin)))]
             [pct  (add-slide pct (orig title sep body))]
             [pct  (if (slide-number) (add-slide-number pct) pct)])
        pct))))
