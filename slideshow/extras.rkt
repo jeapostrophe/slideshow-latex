@@ -1,7 +1,6 @@
 #lang racket/base
 (require slideshow
-         racket/gui
-         (only-in scheme/gui bitmap% bitmap-dc% image-snip% color%))
+         racket/draw)
 
 (provide dropshadow soft-dropshadow outline hrule
          with-font-size with-font-scale

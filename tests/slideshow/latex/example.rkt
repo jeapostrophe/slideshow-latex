@@ -1,7 +1,7 @@
 #lang slideshow
 (require racket/runtime-path
-         "main.rkt"
-         "extras.rkt"
+         slideshow/latex
+         slideshow/extras
          slideshow/code)
 
 ;; latex2bitmap caches renderings, identifying them by md5 hashes of the

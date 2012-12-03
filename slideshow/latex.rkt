@@ -1,12 +1,12 @@
 #lang racket/base
 (require slideshow
-         racket/gui
-         "latex2bitmap.rkt"
+         racket/draw
+         "latex/latex2bitmap.rkt"
          "extras.rkt")
 
 (provide add-preamble
          latex-page-width latex-pict lt $$ $
-         (all-from-out "latex2bitmap.rkt"))
+         (all-from-out "latex/latex2bitmap.rkt"))
 
 
 ;; the width of LaTeX pages in slideshow coordinates
