@@ -29,7 +29,7 @@
   (latex-preamble (string-join (cons (latex-preamble) latex-strs) "\n")))
 
 ;; Formatting options
-(define latex-dpi (make-parameter 150))
+(define latex-dpi (make-parameter 300))
 
 ;; Spam the console with debugging info?
 (define latex-debug? (make-parameter #t))
@@ -95,7 +95,8 @@
   
   (define dvipng-args
     (list "--follow" "-bg" "Transparent" "--truecolor"
-          "-D" (number->string (exact->inexact (latex-dpi))) "-T" "tight"
+          "-D" (number->string (exact->inexact (latex-dpi)))
+          "-T" "tight"
           "-o" (path->string png-file) (path->string dvi-file)))
   
   (when (latex-debug?)
